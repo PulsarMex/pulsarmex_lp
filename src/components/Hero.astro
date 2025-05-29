@@ -1,59 +1,29 @@
 ---
+
 ---
-<section class="relative pt-32 pb-20 md:pt-30 overflow-hidden hero-section">
-  <div class="container-custom relative z-10">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="slide-up" transition:animate="slide">
-        <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
-          Creamos &#128640<br>
-          <span class="text-accent-400">soluciones web</span> <br>
-          de alta calidad
-        </h1>
-        <p class="text-xl text-secondary-600 dark:text-secondary-300 mb-8 max-w-lg">
-          que impulsan tu servicio/negocio o MIPYMES
-        </p>
-        <div class="flex">
-          <a href="/contact" class="btn-primary">
-            Contact us
-          </a>
-        </div>
-      </div>
-      
-      <div class="relative fade-in" transition:animate="fade">
-        <!-- Animated Elephant SVG Hero Image -->
-        <div class="w-full max-w-lg mx-auto">
-           <img src="/logo_white_short_pulsarmex.svg" alt="" class="w-full p-15">
-        </div>
-      </div>
-    </div>
+
+<section class="container mx-auto px-6 sm:px-8 md:px-12 lg:px-30">
+  <div class="text-center">
+    <h1 class="text-5xl lg:text-7xl font-bold py-5 mt-10">
+      Creamos <span class="text-yellow">soluciones web</span> 🚀 <br /> de alta calidad
+    </h1>
+    <p class="text-2xl">que impulsan tu servicio/negocio o MIPYMES</p>
+    <img src="/banner.webp" class="w-full lg:px-25 py-15" />
   </div>
-  
-  <!-- Teal section at the bottom with Trusted By -->
-  <div class="mt-10 w-full overflow-hidden -z-10" transition:animate="slide">
-    <div class="relative bg-teal-400 dark:bg-teal-500 py-12 md:py-16">
-      <div class="container-custom">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <div class="text-5xl md:text-5xl font-bold text-black dark:text-black">
-              <span class="text-center">Crear, Innovar, Im<span class="bg-accent-400 px-2 py-1">Pulsar</span>.</span>
-            </div>
-          </div>
-        </div>
-      </div>
+</section>
+<section class="w-full mx-auto bg-color-secondary px-15 py-10 text-center">
+  <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+    <div class="md:w-1/2 text-center md:text-left me-5">
+      <h2 class="text-6xl font-bold text-right">
+        Crear, <br /> Innovar, <br /> Im<span class="text-yellow">Pulsar</span>
+      </h2>
+    </div>
+    <div class="md:w-1/2 ms-5">
+      <img
+        src="/logo_white_short_pulsarmex.svg"
+        alt="Descripción"
+        class="w-48 h-48 md:w-64 md:h-64 mx-auto md:mx-0"
+      />
     </div>
   </div>
 </section>
-
-<style>
-  /* Add keyframes for additional animations if needed */
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-  }
-  
-  /* Apply floating animation to the entire SVG container */
-  .fade-in svg {
-    animation: float 6s ease-in-out infinite;
-  }
-</style>
