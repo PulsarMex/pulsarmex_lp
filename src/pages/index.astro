@@ -3,43 +3,37 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
+import ProjectsSection from "../components/ProjectsSection.astro";
 ---
 
 <Layout>
   <Header />
   <Hero />
-  <section class="bg-color-secondary">
-    <div class="container mx-auto px-6 sm:px-8 md:px-12 lg:px-30 py-10">
-      <div class="items-center gap-8 md:grid md:grid-cols-2">
-        <div class="service-carousel false">
-          <div class="badge badge-outline badge-primary mb-2">Colaboración</div>
-          <img src="/feria-collage.png" class="mx-auto rounded-sm" />
-        </div>
-        <div class="service-content mt-5 md:mt-0 false">
-          <h2 class="font-bold text-3xl">Feria Tabasco 2024 - 2025</h2>
-          <p class="mt-4 mb-2 text-xl">
-            Hemos colaborado con la gestión de la venta de stands de la Feria Tabasco, un evento masivo realizado cada año en la entidad. El sistema gestiona las solicitudes, los usuarios y su información, generación de documentos, citas y reportes para los usuarios y administradores.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mx-auto px-6 sm:px-8 md:px-12 lg:px-30 py-10">
-      <div class="items-center gap-8 md:grid md:grid-cols-2">
-        <div class="service-content mt-5 md:mt-0 false">
-          <h2 class="font-bold text-3xl">DICONSA Operaciones 2023</h2>
-          <p class="mt-4 mb-2 text-xl">
-            Hemos colaborado en el desarrollo del sistema de Expediente de tiendas en la Dirección de Operaciones de DICONSA el cuál gestiona la documentación general de la apertura y cierre de cada tienda registrada, registro digital de los movimientos de los productos como maíz y frijol. Un repositorio de archivos digitales masivo.
-          </p>
-        </div>
-        <div class="service-carousel false">
-          <div class="badge badge-outline badge-primary mb-2">Colaboración</div>
-          <img src="/diconsa-collage.png" class="mx-auto rounded-sm" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="divider"></div>
+  <ProjectsSection
+    imageUrl="/feria-collage.png"
+    title="Feria Tabasco"
+    text="Hemos colaborado con la gestión de la venta de stands de la Feria Tabasco, un evento masivo realizado cada año en la entidad. El sistema gestiona las solicitudes, los usuarios y su información, generación de documentos, citas y reportes para los usuarios y administradores."
+    highlight="false"
+    liveUrl="https://comercializacionferia.tabasco.gob.mx/"
+    tags={["Colaboración", "Comité de Feria", "Secretaría de Turismo"]}
+    years={["2024", "2025"]}
+  />
+  <ProjectsSection
+    imageUrl="/diconsa-collage.png"
+    title="DICONSA Operaciones"
+    text="Hemos colaborado en el desarrollo del sistema de Expediente de tiendas en la Dirección de Operaciones de DICONSA el cuál gestiona la documentación general de la apertura y cierre de cada tienda registrada, registro digital de los movimientos de los productos como maíz y frijol. Un repositorio de archivos digitales masivo."
+    tags={["Colaboración", "Diconsa S.A de C.V"]}
+    years={["2023", "2024"]}
+  />
+  <ProjectsSection
+    imageUrl="/sif-collage.png"
+    title="Sistema Integral de los Fideicomisos (SIF)"
+    text="Hemos colaborado en el desarrollo del sistema SIF, usado en SEDEC, hoy Secretería de Turismo y Desarrollo Económico, el cuál sirve de apoyo para la gestión de los fideicomisos para la población tabasqueña, desde el registro y recepción de documentos de los usuarios hasta la administración y seguimiento de cada solicitud de los tabasqueños."
+    highlight="false"
+    liveUrl="https://sif.tabasco.gob.mx/"
+    tags={["Colaboración", "SEDEC", "Secretaría de Turismo"]}
+    years={["2020", "2021", "2022", "2023", "2024", "2025"]}
+  />
+  <div class="divider m-0 p-0 h-0"></div>
   <Footer />
 </Layout>
