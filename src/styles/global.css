@@ -59,7 +59,7 @@ html {
   }
 
   .pulsar {
-    animation: pulsar 2s ease-in-out infinite;
+    animation: pulsar 1.3s ease-in-out infinite;
   }
 }
 
