@@ -1,20 +1,24 @@
 ---
-import "../styles/global.css"
+import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es-mx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <title>PulsarMex</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <ClientRouter />
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <slot />
+      <slot />
     </main>
-</body>
+  </body><!-- To God be the Glory and the Honor -->
 </html>
