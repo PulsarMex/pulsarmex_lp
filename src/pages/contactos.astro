@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <Header />
+  <div
+    class="container min-h-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-15"
+  >
+    <div class="flex justify-end">
+      <img
+        src="/dedc_pic.png"
+        class="w-full max-w-2xl drop-shadow-2xl drop-shadow-yellow-100 profile-pic lg:scale-100 md:scale-125"
+        loading="lazy"
+      />
+    </div>
+    <div class="p-10 md:p-0">
+      <h1 class="font-extrabold text-5xl">David Ernesto Domínguez Castro</h1>
+      <h3 class="text-lg mt-2">Maestría en Administración de Tecnologías de la Información</h3>
+      <h3 class="text-lg">Ingeniería en Tecnologías de la Información</h3>
+      <h3 class="text-lg">TSU en Sistemas Informáticos</h3>
+    </div>
+  </div>
+  <div class="divider m-0 p-0 h-0"></div>
+  <Footer />
+</Layout>

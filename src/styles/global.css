@@ -62,3 +62,7 @@ html {
     animation: pulsar 2s ease-in-out infinite;
   }
 }
+
+.profile-pic {
+  mask-image: linear-gradient(black 90%, transparent);
+}
