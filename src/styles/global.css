@@ -16,9 +16,49 @@ html {
 }
 
 .text-yellow {
-    color: var(--color-text-yellow);
+  color: var(--color-text-yellow);
 }
 
 .bg-color-secondary {
-    background-color: var(--color-fondo-secondary);
+  background-color: var(--color-fondo-secondary);
+}
+
+@layer utilities {
+  @keyframes pulsar {
+    0% {
+      text-shadow: 0 0 6px #ffd700, 0 0 12px #ffd700;
+    }
+
+    10% {
+      text-shadow: 0 0 18px #ffd700, 0 0 36px #ffd700;
+    }
+
+    25% {
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+    }
+
+    40% {
+      text-shadow: 0 0 26px #ffd700, 0 0 52px #ffd700;
+    }
+
+    60% {
+      text-shadow: 0 0 8px #ffd700, 0 0 16px #ffd700;
+    }
+
+    75% {
+      text-shadow: 0 0 22px #ffd700, 0 0 44px #ffd700;
+    }
+
+    90% {
+      text-shadow: 0 0 14px #ffd700, 0 0 28px #ffd700;
+    }
+
+    100% {
+      text-shadow: 0 0 6px #ffd700, 0 0 12px #ffd700;
+    }
+  }
+
+  .pulsar {
+    animation: pulsar 2s ease-in-out infinite;
+  }
 }
