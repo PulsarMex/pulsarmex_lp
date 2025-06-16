@@ -9,7 +9,7 @@ import ProjectsSection from "../components/ProjectsSection.astro";
 <Layout>
   <Header />
   <Hero />
-  <section class="px-12 lg:px-20 pt-17 bg-color-secondary text-center">
+  <section class="px-12 lg:px-20 pt-17 bg-color-secondary text-center" id="projects">
     <h2 class="text-5xl font-bold">
       Pulsos de energía convertidos en impacto social
     </h2>
@@ -61,11 +61,11 @@ import ProjectsSection from "../components/ProjectsSection.astro";
   />
   <section class="w-full mx-auto p-20 text-center bg-black">
     <div class="flex flex-col items-center justify-center">
-      <div class="mb-3 md:mb-6 group">
-        <img src="/astronaut.png" class="w-40 h-40 md:w-56 md:h-56" />
+      <div class="mb-3 md:mb-6 group" id="contact">
+        <img src="/astronaut.png" class="w-40 h-40 md:w-56 md:h-56 brightness-150 contrast-110" />
       </div>
       <h3 class="text-6xl font-extrabold">Contáctanos</h3>
-      <div class="p-8 bg-[#101526] rounded-sm my-14 drop-shadow-[0_0_10px_#FFD700]">
+      <div class="p-8 bg-[#101526] rounded-sm my-14 shadow-[0_0_50px_10px_rgba(255,245,170,0.35)]">
         <h4 class="text-4xl font-bold mt-3">
           ¿Tienes una idea o quieres impulsar tu servicio/negocio o MIPYMES?
         </h4>
@@ -78,9 +78,8 @@ import ProjectsSection from "../components/ProjectsSection.astro";
       <a
         href="https://wa.me/529932794832"
         target="_blank"
-        class="btn border-0 btn-xl bg-[#25D366] text-white -mt-12 drop-shadow-[0_0_10px_#FFD700]"
+        class="btn border-0 btn-xl bg-[#25D366] text-white -mt-8 shadow-[0_0_50px_10px_rgba(255,245,170,0.35)]"
       >
-        <!-- Ícono limpio de WhatsApp -->
         <svg
           fill="#ffffff"
           width="22"

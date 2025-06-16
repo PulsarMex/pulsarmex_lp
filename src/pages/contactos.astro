@@ -7,20 +7,285 @@ import Footer from "../components/Footer.astro";
 <Layout>
   <Header />
   <div
-    class="container min-h-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-15"
+    class="container min-h-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start py-15"
   >
-    <div class="flex justify-end">
+    <div class="flex justify-end xl:sticky xl:top-0 xl:overflow-auto">
       <img
         src="/dedc_pic.png"
         class="w-full max-w-2xl drop-shadow-2xl profile-pic lg:scale-100 md:scale-125"
         loading="lazy"
       />
     </div>
-    <div class="p-10 md:p-0">
+    <div class="p-10 md:p-0 lg:pr-10">
       <h1 class="font-extrabold text-5xl">David Ernesto Domínguez Castro</h1>
-      <h3 class="text-lg mt-2">Maestría en Administración de Tecnologías de la Información</h3>
+      <h3 class="text-lg mt-2">
+        Desarrollador Web Full-Stack en Django/Python
+      </h3>
+      <h3 class="text-lg">
+        Maestría en Administración de Tecnologías de la Información
+      </h3>
       <h3 class="text-lg">Ingeniería en Tecnologías de la Información</h3>
-      <h3 class="text-lg">TSU en Sistemas Informáticos</h3>
+      <h3 class="text-lg mb-3">TSU en Sistemas Informáticos</h3>
+
+      <a
+        href="https://www.linkedin.com/in/david-ernesto-dc-5a3330ab/"
+        target="_blank"
+        class="btn btn-sm bg-[#0967C2] text-white border-[#0059b3] me-1"
+      >
+        <svg
+          aria-label="LinkedIn logo"
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          ><path
+            fill="white"
+            d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+            fill-rule="evenodd"></path></svg
+        >
+        LinkedIn
+      </a>
+      <div class="tooltip tooltip-secondary me-1" data-tip="dedc_011596@hotmail.com">
+        <a
+          href="mailto:dedc_011596@hotmail.com"
+          class="btn btn-sm bg-white text-black border-[#e5e5e5]"
+        >
+          <svg
+            aria-label="Email icon"
+            width="16"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            ><g
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2"
+              fill="none"
+              stroke="black"
+              ><rect width="20" height="16" x="2" y="4" rx="2"></rect><path
+                d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g
+            ></svg
+          >
+          Correo Electrónico
+        </a>
+      </div>
+      <a href="https://github.com/DEDC" target="_blank" class="btn btn-sm text-white bg-[#2b3137] border border-gray-600 me-1">
+        <svg
+          aria-label="GitHub logo"
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          ><path
+            fill="white"
+            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+          ></path></svg
+        >
+        GitHub
+      </a>
+      <div class="tooltip tooltip-secondary" data-tip="+52 993 1176 038">
+        <a
+          href="https://wa.me/529931176038"
+          target="_blank"
+          class="btn btn-sm bg-[#25D366] text-white"
+        >
+          <svg
+            fill="#ffffff"
+            width="16"
+            height="16"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 308 308"
+            xml:space="preserve"
+            stroke="#ffffff"
+            ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+              <g id="XMLID_468_">
+                <path
+                  id="XMLID_469_"
+                  d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"
+                ></path>
+                <path
+                  id="XMLID_470_"
+                  d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"
+                ></path>
+              </g>
+            </g></svg
+          >
+          WhatsApp
+        </a>
+      </div>
+      <h3 class="text-lg mr-5 italic my-6">
+        Me especializo en el análisis, desarrollo y mantenimiento de sistemas
+        informáticos en el entorno web con 6 años de experiencia en el ámbito
+        gubernamental y proyectos privados. Además de implementar soluciones de
+        TI para administrar y gestionar los recursos informáticos con base en
+        las necesidades de la empresa o dependencia.
+      </h3>
+      <div class="join join-vertical">
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-100 border border-x-0 rounded-none join-item"
+        >
+          <input type="checkbox" />
+          <div class="collapse-title font-semibold pl-0">
+            <span class="text-xl font-bold">Mi Filosofía de vida</span>
+          </div>
+          <div class="collapse-content text-lg pl-0">
+            Soy amante de la buena música y la tecnología. Me gusta rodearme de
+            gente leal a sus principios, ideales y creencias. Pienso que la
+            lealtad es un valor del corazón, nada lo puede comprar. Sé que Dios
+            tiene el control de todo, aunque en su momento no podamos verlo.
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-100 border border-x-0 rounded-none join-item"
+        >
+          <input type="checkbox" />
+          <div class="collapse-title font-semibold pl-0">
+            <span class="text-xl font-bold">Experiencia Laboral</span>
+          </div>
+          <div class="collapse-content pl-0">
+            <div class="job-item">
+              <span class="text-lg text-yellow"
+                >DICONSA S.A. de C.V | <div
+                  class="badge badge-soft badge-sm badge-warning"
+                >
+                  Ciudad de México
+                </div> | <div class="badge badge-soft badge-sm badge-warning">
+                  Ene 2023 – Oct 2024
+                </div></span
+              >
+              <p class="font-bold text-base">Subgerente de TI</p>
+              <ul class="ms-5 text-sm">
+                <li>
+                  ● Análisis y desarrollo del sistema web interno de la
+                  dirección DICONSA Operaciones.
+                </li>
+                <li>
+                  ● Gestión de los recursos informáticos tales como laptops,
+                  computadoras de escritorio e impresoras, relojes checadores,
+                  etc.
+                </li>
+                <li>
+                  ● Coordinación con el equipo general de TI para el uso de APIs
+                  y SOAP.
+                </li>
+              </ul>
+            </div>
+            <div class="job-item mt-4">
+              <span class="text-lg text-yellow"
+                >Secretaría para el Desarrollo Económico y la Competitividad | <div
+                  class="badge badge-soft badge-sm badge-warning"
+                >
+                  Villahermosa, Tab.
+                </div> | <div class="badge badge-soft badge-sm badge-warning">
+                  Sep 2019 – Jul 2022
+                </div></span
+              >
+              <p class="font-bold text-base">
+                Jefe de Departamento de Apoyo Técnico e Informático
+              </p>
+              <ul class="ms-5 text-sm">
+                <li>
+                  ● Análisis y desarrollo de múltiples sistemas web utilizados
+                  durante el sexenio. Algunos utilizados durante la pandemia,
+                  para la exhibición de productos y servicios locales, para
+                  brindar apoyos a las MIPyMES, entre otros.
+                </li>
+                <li>
+                  ● Soporte técnico a equipos informáticos de la dependencia.
+                </li>
+                <li>
+                  ● Coordinación externa con el equipo de Secretaría de Salud
+                  para la creación de una API de comunicación empresarial
+                  durante la pandemia COVID-19.
+                </li>
+              </ul>
+            </div>
+            <div class="job-item mt-4">
+              <span class="text-lg text-yellow"
+                >Tobe Corporativo | <div
+                  class="badge badge-soft badge-sm badge-warning"
+                >
+                  Villahermosa, Tab.
+                </div> | <div class="badge badge-soft badge-sm badge-warning">
+                  Feb 2019 – Abr 2022
+                </div></span
+              >
+              <p class="font-bold text-base">Desarrolador Web Full Stack</p>
+              <ul class="ms-5 text-sm">
+                <li>
+                  ● Desarrollo de Landing Pages y sistemas web de acuerdo con
+                  las solicitudes de los clientes de la agencia, tales como
+                  Chedraui, Abarroteras Sánchez y Monterrey, entre otros.
+                </li>
+              </ul>
+            </div>
+            <p class="text-base mt-4">
+              Y algunas otras dependencias de gobierno en las que comencé a
+              empaparme del ámbito gubernamental gracias a las prácticas
+              profesionales, tales como la <span class="font-bold"
+                >Comisión Estatal de Agua y Saneamiento (CEAS)</span
+              > en el año 2016 y la <span class="font-bold"
+                >Secretaría de Desarrollo Económico y Turismo (SDET)</span
+              > en el año 2018.
+            </p>
+          </div>
+        </div>
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border-base-100 border border-x-0 rounded-none join-item"
+        >
+          <input type="checkbox" />
+          <div class="collapse-title font-semibold pl-0">
+            <span class="text-xl font-bold">Formación Académica</span>
+          </div>
+          <div class="collapse-content text-lg pl-0">
+            <div class="school-item">
+              <span class="text-lg text-yellow"
+                >Universidad Juárez Autónoma de Tabasco | <div
+                  class="badge badge-soft badge-sm badge-warning"
+                >
+                  Villahermosa, Tab.
+                </div> | <div class="badge badge-soft badge-sm badge-warning">
+                  Ago 2021 - Oct 2023
+                </div></span
+              >
+              <p class="font-bold text-base">
+                Maestría en Administración de Tecnologías de la Información
+              </p>
+            </div>
+            <div class="school-item mt-4">
+              <span class="text-lg text-yellow"
+                >Universidad Tecnológica de Tabasco | <div
+                  class="badge badge-soft badge-sm badge-warning"
+                >
+                  Villahermosa, Tab.
+                </div> | <div class="badge badge-soft badge-sm badge-warning">
+                  Ago 2014 – Oct 2018
+                </div></span
+              >
+              <p class="font-bold text-base">
+                Ingeniería en Tecnologías de la Información
+              </p>
+              <p class="font-bold text-base">TSU en Sistemas Informáticos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="/#projects"
+        class="btn btn-outline bg-black btn-xl mt-5 w-full"
+        target="_blank"
+      >
+        ✨ Mira algo de lo que hago 🚀
+      </a>
     </div>
   </div>
   <div class="divider m-0 p-0 h-0"></div>
