@@ -11,7 +11,7 @@ import ProjectsSection from "../components/ProjectsSection.astro";
   <Hero />
   <section class="px-12 lg:px-20 pt-17 bg-color-secondary text-center">
     <h2 class="text-5xl font-bold">
-      ✨Pulsos de energía convertidos en impacto social
+      <span class="drop-shadow-[0_0_13px_#FFD700] text-4xl">🟡</span> Pulsos de energía convertidos en impacto social
     </h2>
     <p class="mt-2 text-2xl">
       Te mostramos los proyectos que nos definen y representan nuestro trabajo
@@ -59,6 +59,18 @@ import ProjectsSection from "../components/ProjectsSection.astro";
     tags={["Colaboración", "SEDEC", "Gobierno Estatal"]}
     years={["2020", "2021", "2022", "2023"]}
   />
-  <div class="divider m-0 p-0 h-0"></div>
+  <section class="w-full mx-auto p-20 text-center bg-black">
+    <div class="flex flex-col items-center justify-center">
+      <div class="mb-3 md:mb-6 group">
+        <img
+          src="/astronaut.png"
+          class="w-40 h-40 md:w-56 md:h-56"
+        />
+      </div>
+      <h3 class="text-6xl text-yellow font-extrabold drop-shadow-[0_0_20px_#FFD700]">
+        Contáctanos
+      </h3>
+    </div>
+  </section>
   <Footer />
 </Layout>
