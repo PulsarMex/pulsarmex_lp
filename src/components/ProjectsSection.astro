@@ -3,6 +3,7 @@ const {
   imageUrl,
   title,
   text,
+  subtitle,
   highlight,
   liveUrl,
   tags = [],
@@ -49,6 +50,7 @@ const {
         ))
       }
       <h2 class="text-4xl font-bold mb-4 text-white">Proyecto {title}</h2>
+      <span class="text-yellow-300 text-lg">✨ {subtitle}</span>
       <p class="text-xl text-start">{text}</p>
       {
         liveUrl ? (
