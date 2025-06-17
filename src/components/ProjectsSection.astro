@@ -23,7 +23,7 @@ const {
           <div class="w-full aspect-video max-w-[672px]">
             <iframe
               src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(facebookUrl)}&show_text=false&autoplay=false`}
-              class="w-full h-full rounded-sm shadow-[0_0_50px_10px_rgba(255,245,170,0.35)]"
+              class="w-full h-full rounded-sm shadow-[0_0_30px_10px_rgba(255,215,0,0.25)]"
               allowfullscreen
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             />
@@ -31,7 +31,7 @@ const {
         ) : (
           <img
             src={imageUrl}
-            class="w-full rounded-sm max-w-2xl shadow-[0_0_50px_10px_rgba(255,245,170,0.35)]"
+            class="w-full rounded-sm max-w-2xl shadow-[0_0_30px_10px_rgba(255,215,0,0.25)]"
             loading="lazy"
           />
         )
