@@ -5,9 +5,12 @@ import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
 import ProjectsSection from "../components/ProjectsSection.astro";
 import Contact from "../components/Contact.astro";
+const title = "PulsarMex";
+const description = "Creamos soluciones web de alta calidad que impulsan tu servicio/negocio, mipymes o gobierno";
+const image = "/pulsarmex_og.png";
 ---
 
-<Layout>
+<Layout {title} {description} {image}>
   <Header />
   <Hero />
   <ProjectsSection
