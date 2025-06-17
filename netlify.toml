@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://dedc.pulsarmex.com/*"
-  to = "/contactos/:splat"
-  status = 200
-  force = true
