@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+const title = "David Domínguez | PulsarMex";
+const description = "Soy David Domínguez y damos soluciones web de alta calidad que impulsan tu servicio/negocio, mipymes o gobierno";
+const image = "/dedc_og.png";
 ---
 
-<Layout>
-  <Header />
+<Layout {title} {description} {image}>
   <div
     class="container min-h-screen mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start py-15"
   >
