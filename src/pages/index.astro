@@ -1,61 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import ProjectsSection from "../components/ProjectsSection.astro";
+import Projects from "../components/Projects.astro";
 import Contact from "../components/Contact.astro";
+import Benefits from "../components/Benefits.astro";
+import Services from "../components/Services.astro";
+import TextDivider from "../components/TextDivider.astro";
+TextDivider;
 const title = "PulsarMex";
-const description = "Creamos soluciones web de alta calidad que impulsan tu servicio/negocio, mipymes o gobierno";
+const description =
+  "Creamos soluciones web de alta calidad que impulsan tu servicio/negocio, mipymes o gobierno";
 const image = "/pulsarmex_og.png";
 ---
 
 <Layout {title} {description} {image}>
   <Hero />
-  <ProjectsSection
-    imageUrl="/feria-collage.png"
-    title="Feria Tabasco"
-    subtitle="Automatización de procesos para un evento masivo en Tabasco."
-    text="Hemos colaborado con la gestión de la venta de stands de la Feria Tabasco, un evento masivo realizado cada año en la entidad. El sistema gestiona las solicitudes, los usuarios y su información, generación de documentos, citas y reportes para los usuarios y administradores."
-    highlight="false"
-    liveUrl="https://comercializacionferia.tabasco.gob.mx/"
-    tags={[
-      "Colaboración",
-      "Comité de Feria",
-      "DeBoleto",
-      "Secretaría de Turismo",
-      "Gobierno Estatal",
-    ]}
-    years={["2024", "2025"]}
-  />
-  <ProjectsSection
-    imageUrl="/diconsa-collage.png"
-    title="DICONSA Operaciones"
-    subtitle="Recopilación, gestión y almacenamiento de más de 700k archivos"
-    text="Hemos colaborado en el desarrollo del sistema de Expediente de tiendas en la Dirección de Operaciones de DICONSA el cuál gestiona la documentación general de la apertura y cierre de cada tienda registrada, registro digital de los movimientos de los productos como maíz y frijol. Un repositorio de archivos digitales masivo."
-    tags={["Colaboración", "Diconsa S.A de C.V", "Gobierno Federal"]}
-    years={["2023", "2024"]}
-  />
-  <ProjectsSection
-    imageUrl="/sif-collage.png"
-    title="Sistema Integral de los Fideicomisos (SIF)"
-    subtitle="Gestión de miles de créditos y apoyos del gobierno para el sector emprendedor de Tabasco"
-    text="Hemos colaborado en el desarrollo del sistema SIF, usado en SEDEC, hoy Secretería de Turismo y Desarrollo Económico, el cuál sirve de apoyo para la gestión de los fideicomisos para la población tabasqueña, desde el registro y recepción de documentos de los usuarios hasta la administración y seguimiento de cada solicitud de los tabasqueños. También cuenta con un sistema de cursos en línea integrado."
-    highlight="false"
-    liveUrl="https://sif.tabasco.gob.mx/"
-    tags={[
-      "Colaboración",
-      "SEDEC",
-      "Secretaría de Turismo",
-      "Gobierno Estatal",
-    ]}
-    years={["2020", "2021", "2022", "2023", "2024", "2025"]}
-  />
-  <ProjectsSection
-    facebookUrl="https://www.facebook.com/television.tabasquena/videos/606600596673637"
-    title="LoQueSomos Tabasco"
-    subtitle="Directorio Digital Estatal con cientos de empresas, productos y servicios registrados para el impulso económico"
-    text="Sistema desarrollado durante la pandemia COVID-19 con el propósito de que las personas obtuvieran los productos y servicios que necesitaban incluso con servicio a domicilio, según aplicaba. En este sistema se registraron cientos de empresas de diversos giros que ofrecían sus servicios y productos a la población siendo así, en su momento, el mayor directorio de productos y servicios en la entidad."
-    tags={["Colaboración", "SEDEC", "Gobierno Estatal"]}
-    years={["2020", "2021", "2022", "2023"]}
-  />
+  <section
+    class="w-full mx-auto p-10 text-center bg-[#0C111A] border-t border-gray-800"
+  >
+    <h3 class="text-5xl font-extrabold text-white italic">
+      Crear, Innovar, Im<span class="text-yellow font-extrabold pulsar"
+        >Pulsar</span
+      >
+    </h3>
+  </section>
+  <Benefits />
+  <section class="w-full mx-auto p-10 text-center bg-[#0C111A]">
+    <h3 class="text-5xl font-extrabold text-white italic">
+      Base sólida, Noches tranquilas
+    </h3>
+  </section>
+  <Services />
+  <Projects />
+  <section
+    class="w-full mx-auto p-10 text-center bg-[#0C111A] border-b border-gray-800"
+  >
+    <h3 class="text-5xl font-extrabold text-white italic">
+      Menos, bien hecho, es más
+    </h3>
+  </section>
   <Contact />
 </Layout>

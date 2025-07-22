@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -10,9 +8,12 @@
   --color-fondo-secondary: #0A0F1A;
 }
 
-html {
+.bg-primary-color {
   background-color: var(--color-fondo);
-  min-height: 100%;
+}
+
+.text-primary-color {
+  color: var(--color-fondo);
 }
 
 .text-yellow {
@@ -81,4 +82,20 @@ html {
 
 .pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
