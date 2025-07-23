@@ -13,7 +13,7 @@ const { title, description, image } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     <title>PulsarMex</title>
-    <!-- Open Graph / Facebook (WhatsApp usa esto) -->
+    <meta name="description" content="Ofrecemos servicios de Desarrollo de Software Web, Soporte Técnico Especializado, Redes y Conectividad para impulsar tu proyecto">
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url.href} />
     <meta property="og:title" content={title} />
@@ -22,8 +22,7 @@ const { title, description, image } = Astro.props;
       property="og:image"
       content={new URL(image, Astro.url.origin).toString()}
     />
-
-    <!-- Twitter -->
+    <meta property="og:logo" content={new URL(image, Astro.url.origin).toString()} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={Astro.url.href} />
     <meta name="twitter:title" content={title} />
