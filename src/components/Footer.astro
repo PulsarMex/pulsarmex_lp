@@ -1,39 +1,50 @@
-<footer
-  class="footer footer-horizontal footer-center text-primary-content px-10 py-15 bg-primary-color border-t border-gray-800"
->
-  <aside class="group">
-    <img
-      src="/logo_white_short_pulsarmex.svg"
-      alt="Descripción"
-      width="100"
-      height="100"
-      class="m-3"
-    />
-    <p class="font-bold text-3xl">PulsarMex</p>
-    <p class="text-lg">
-      Creando soluciones desde el 2019
-      <br />
-      Nombrada en el 2025
-    </p>
-    <a class="text-xl mt-1" href="tel:+529932794832">Contacto +52 993 279 4832</a>
-    <p>Villahermosa, Tabasco, México</p>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-  </aside>
-  <nav>
-    <div class="grid grid-flow-col gap-4">
-      <a target="_blank" href="https://www.facebook.com/profile.php?id=61575184766005">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current"
+<footer class="relative bg-black">
+  <img
+    src="/stars.png"
+    alt="Mapa de México"
+    class="absolute w-full h-full object-cover object-top z-0 pointer-events-none"
+  />
+  <div class="relative z-10 footer footer-horizontal footer-center px-10 py-15">
+    <aside class="group">
+      <img
+        src="/logo_white_short_pulsarmex.svg"
+        alt="PulsarMex"
+        width="100"
+        height="100"
+        class="m-3 pulsar-glow"
+      />
+      <p class="font-bold text-3xl">PulsarMex</p>
+      <p class="text-lg">
+        Creando soluciones desde el 2019
+        <br />
+        Nombrada en el 2025
+      </p>
+      <a class="text-xl mt-1" href="tel:+529932794832"
+        >Contacto +52 993 279 4832</a
+      >
+      <p>Villahermosa, Tabasco, México</p>
+      <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+    </aside>
+
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=61575184766005"
         >
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-          ></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </div>
 </footer>

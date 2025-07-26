@@ -99,3 +99,34 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+ @keyframes pulsar_logo {
+    0% {
+      filter: drop-shadow(0 0 10px rgba(255, 240, 100, 0.3))
+              drop-shadow(0 0 20px rgba(255, 240, 100, 0.15));
+    }
+    18% {
+      filter: drop-shadow(0 0 15px rgba(255, 250, 150, 0.5))
+              drop-shadow(0 0 20px rgba(255, 250, 150, 0.25));
+    }
+    33% {
+      filter: drop-shadow(0 0 12px rgba(255, 240, 100, 0.35))
+              drop-shadow(0 0 24px rgba(255, 240, 100, 0.2));
+    }
+    57% {
+      filter: drop-shadow(0 0 22px rgba(255, 255, 180, 0.7))
+              drop-shadow(0 0 30px rgba(255, 255, 180, 0.3));
+    }
+    72% {
+      filter: drop-shadow(0 0 15px rgba(255, 240, 100, 0.4))
+              drop-shadow(0 0 25px rgba(255, 240, 100, 0.2));
+    }
+    100% {
+      filter: drop-shadow(0 0 10px rgba(255, 240, 100, 0.3))
+              drop-shadow(0 0 20px rgba(255, 240, 100, 0.15));
+    }
+  }
+
+  .pulsar-glow {
+    animation: pulsar_logo 2.5s infinite ease-in-out;
+  }
