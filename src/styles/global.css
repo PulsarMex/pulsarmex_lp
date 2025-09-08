@@ -68,22 +68,6 @@
   mask-image: linear-gradient(black 90%, transparent);
 }
 
-@keyframes pulse-glow {
-
-  0%,
-  100% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 0.6;
-  }
-}
-
-.pulse-glow {
-  animation: pulse-glow 4s ease-in-out infinite;
-}
-
 @keyframes float {
 
   0%,
@@ -100,33 +84,40 @@
   animation: float 6s ease-in-out infinite;
 }
 
- @keyframes pulsar_logo {
-    0% {
-      filter: drop-shadow(0 0 10px rgba(255, 240, 100, 0.3))
-              drop-shadow(0 0 20px rgba(255, 240, 100, 0.15));
-    }
-    18% {
-      filter: drop-shadow(0 0 15px rgba(255, 250, 150, 0.5))
-              drop-shadow(0 0 20px rgba(255, 250, 150, 0.25));
-    }
-    33% {
-      filter: drop-shadow(0 0 12px rgba(255, 240, 100, 0.35))
-              drop-shadow(0 0 24px rgba(255, 240, 100, 0.2));
-    }
-    57% {
-      filter: drop-shadow(0 0 22px rgba(255, 255, 180, 0.7))
-              drop-shadow(0 0 30px rgba(255, 255, 180, 0.3));
-    }
-    72% {
-      filter: drop-shadow(0 0 15px rgba(255, 240, 100, 0.4))
-              drop-shadow(0 0 25px rgba(255, 240, 100, 0.2));
-    }
-    100% {
-      filter: drop-shadow(0 0 10px rgba(255, 240, 100, 0.3))
-              drop-shadow(0 0 20px rgba(255, 240, 100, 0.15));
-    }
+@keyframes pulsar_logo {
+  0% {
+    filter: drop-shadow(0 0 14px #ffd700) drop-shadow(0 0 28px #ffd700);
   }
 
-  .pulsar-glow {
-    animation: pulsar_logo 2.5s infinite ease-in-out;
+  10% {
+    filter: drop-shadow(0 0 34px #ffd700) drop-shadow(0 0 68px #ffd700);
   }
+
+  25% {
+    filter: drop-shadow(0 0 20px #ffd700) drop-shadow(0 0 40px #ffd700);
+  }
+
+  40% {
+    filter: drop-shadow(0 0 45px #ffd700) drop-shadow(0 0 90px #ffd700);
+  }
+
+  60% {
+    filter: drop-shadow(0 0 16px #ffd700) drop-shadow(0 0 32px #ffd700);
+  }
+
+  75% {
+    filter: drop-shadow(0 0 38px #ffd700) drop-shadow(0 0 76px #ffd700);
+  }
+
+  90% {
+    filter: drop-shadow(0 0 26px #ffd700) drop-shadow(0 0 52px #ffd700);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 14px #ffd700) drop-shadow(0 0 28px #ffd700);
+  }
+}
+
+.pulsar-glow {
+  animation: pulsar_logo 1.3s infinite ease-in-out;
+}
